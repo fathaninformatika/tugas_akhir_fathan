@@ -11,7 +11,7 @@ body {
     background: #0a0a0f;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 20px;
     line-height: 1.6;
@@ -23,6 +23,7 @@ body {
     max-width: 400px;
     position: relative;
     z-index: 10;
+    margin-top: 50px;
 }
 
 .login-card {
