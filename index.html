@@ -59,7 +59,7 @@ https://templatemo.com/tm-573-eduwell
                           <li class="scroll-to-section"><a href="#testimonials">Testimoni</a></li> 
                           <li class="scroll-to-section"><a href="#contact-section">Hubungi Kami</a></li> 
                           <li><a href="#contact-section" class="nav-cta">Daftar Sekarang</a></li>
-                          <li id="userInfo">Belum login</li>
+                          <li id="userinfo">Belum login</li>
                           <li id="authArea">
                               <button onclick="goLogin()" class="nav-cta">Login</button>
                           </li>
@@ -456,12 +456,14 @@ https://templatemo.com/tm-573-eduwell
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="login/js/welcome.js"></script>
-    <script>
-
-      function goLogin() {
-    window.location.href = "login/login.html";
-}
-
+  <script>
+    
+// Tambahkan fungsi goLogin
+  function goLogin() {
+    window.location.href = 'login.html';
+  }
+  
+  // ... kode JavaScript yang sudah ada ...
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 
