@@ -27,6 +27,41 @@ TemplateMo 573 EduWell
 https://templatemo.com/tm-573-eduwell
 
 -->
+    <style>
+        /* Perbaikan menu login agar rapi di kanan */
+        .main-nav .nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* Dorong elemen login ke kanan */
+        .nav-right {
+            margin-left: auto;
+        }
+       /* Style untuk teks "Belum login" */
+        #userInfo {
+            color: #666;
+            font-size: 14px;
+            padding: 0 10px;
+        }
+      /* Style tombol login */
+        #authArea button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        
+        #authArea button:hover {
+            opacity: 0.8;
+        }
+      #authArea button:hover {
+            opacity: 0.8;
+        }
+    </style>
   </head>
 
 <body>
@@ -58,9 +93,9 @@ https://templatemo.com/tm-573-eduwell
                           </li>
                           <li class="scroll-to-section"><a href="#testimonials">Testimoni</a></li> 
                           <li class="scroll-to-section"><a href="#contact-section">Hubungi Kami</a></li> 
-                          <li><a href="#contact-section" class="nav-cta">Daftar Sekarang</a></li>
-                          <li id="userInfo">Belum login</li>
-                          <li id="authArea">
+                          <li class="nav-right"><a href="#contract-section" class="nav-cta">Daftar Sekarang</a></li>
+                          <li class="nav-right" id="userInfo">Belum login</li>
+                          <li class="nav-right" id="authArea">
                               <button onclick="goLogin()" class="nav-cta">Login</button>
                           </li>
                       </ul>        
@@ -283,7 +318,7 @@ https://templatemo.com/tm-573-eduwell
       <div class="row">
         <div class="col-lg-5 offset-lg-1">
           <div class="left-image">
-            <img src="assets/images/diskon.jpeg"alt="Promosi Diskon 30%">
+            <img src="assets/images/diskon.jpeg" alt="Promosi Diskon 30%">
           </div>
         </div>
         <div class="col-lg-5 align-self-center">
@@ -457,6 +492,10 @@ https://templatemo.com/tm-573-eduwell
     <script src="assets/js/custom.js"></script>
     <script src="login/js/welcome.js"></script>
     <script>
+
+       function goLogin() {
+        window.location.href = "login.html";
+    }
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 
